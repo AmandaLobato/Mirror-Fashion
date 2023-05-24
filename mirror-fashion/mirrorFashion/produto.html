@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mirrorFashion/reset.css">
+    <link rel="stylesheet" href="../mirrorFashion/public_html/style.css">
+    <link rel="stylesheet" href="../mirrorFashion/public_html/produto.css">
+    <link rel="stylesheet" href="../mirrorFashion/public_html/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Bad+Script&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Produto</title>
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v17.0" nonce="0nToE9Lz"></script>
+    <header>
+        <h1><img src="../mirrorFashion/public_html/img/logo.png" alt="Logo da Mirror Fashion"></h1>
+        <p class="sacola">
+            Nenhum item na sacola de compras
+        </p>
+
+        <nav class="menu_opcoes">
+            <ul>
+                <li><a href="#" >Sua Conta</a></li>
+                <li><a href="#" >Lista de Desejo</a></li>
+                <li><a href="#" >Cartão Fidelidade</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="#" >Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!--Conteudo página produto-->
+    <div class="produto-back">
+        <div class="container">
+            <div class="produto">
+                <h1>Fuzzy Cardigan</h1>
+                <p>Por apenas R$ 129, 99</p>
+                    <form >
+                            <fieldset class="cores">
+                                <legend>Escolha a cor:</legend>
+                
+                                <input type="radio" name="cor" value="verde" id="verde" checked>
+                                <label for="verde">
+                                    <img src="../mirrorFashion/public_html/img/produtos/foto1-verde.png" alt="Cardigan Verde">
+                                </label>
+                
+                                <input type="radio" name="cor" value="rosa" id="rosa">
+                                <label for="rosa">
+                                    <img src="../mirrorFashion/public_html/img/produtos/foto1-rosa.png" alt="Cardigan Rosa">
+                                </label>
+                
+                                <input type="radio" name="cor" value="azul" id="azul">
+                                <label for="azul">
+                                    <img src="../mirrorFashion/public_html/img/produtos/foto1-azul.png" alt="Cardigan Azul">
+                                </label>
+                        </fieldset>
+                        <fieldset class="tamanhos">
+                            <legend>Escolha o tamanho: </legend>
+                            <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho"
+                                    oninput="mostraTamanho.value=value" onchange="mostraTamanho.value=value">
+                                    <input type="text" id="mostraTamanho" value="42" disabled>
+
+                            
+                        </fieldset>
+                        <button class="comprar">Comprar </button>
+                    </form>
+            </div>
+            <div class="detalhes">
+                <h2>Detalhes do Produto</h2>
+                <p>Esse é o melhor casaco de Cardigan que você já viu. Excelente material italiano com 
+                    estampa desenhada pelos artesãos da comunidade de Krotor nas ilhas gregas. 
+                     Compre já e receba hoje mesmo pela nossa entrega a jato
+
+                </p>
+            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Detalhe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Modelo</td>
+                                <td>Cardigã 7845</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>Algodão e poliester</td>
+                            </tr>
+                            <tr>
+                                <td>Cores</td>
+                                <td>Azul, Rosa e Verde</td>
+                            </tr>
+                            <tr>
+                                <td>Lavagem</td>
+                                <td>Lavar a mão</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+            </div>
+        </div>
+    </div>
+     <footer>
+        <div class="container">
+            <img src="public_html/img/logo-rodape.png" alt="Logo da Mirror Fashion">
+            <ul class="social">
+                <li><a href="http://facebook.com/mirrorfashion">facebook</a></li>
+                <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+                <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+            </ul>
+        </div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+     </footer>
+</body>
+</html>
