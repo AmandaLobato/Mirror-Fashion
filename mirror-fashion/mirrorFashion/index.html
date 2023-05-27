@@ -186,7 +186,7 @@
                     <a href="../mirrorFashion/produto.html">
                         <figure>
                             <img src="public_html/img/produtos/miniatura10.png" alt="miniatura10">
-                            <figcaption> Camisa Manga longa rosa salmão por R$ 65,00 </figcaption>
+                            <figcaption> Camisa rosa salmão por R$ 65,00 </figcaption>
                         </figure>
                     </a>
                 </li>   
@@ -294,6 +294,17 @@
             </ul>
         </div>
     </footer>
+    <script>
+        var banners = ["../mirrorFashion/public_html/img/destaque-home.png", "../mirrorFashion/public_html/img/destaque-home-2.png"];
+var bannerAtual = 0;
+
+function trocaBanner() {
+    bannerAtual = (bannerAtual + 1) % 2;
+    document.querySelector('.banner-destaque img').src = banners[bannerAtual];
+}
+
+setInterval(trocaBanner, 4000);
+    </script>
     <script type="text/javascript" src="../mirrorFashion/public_html/js/home.js"></script>
     <script	type="text/javascript"	src="../mirrorFashion/public_html/js/banner.js"></script>
     <script type="text/javascript" src="../mirrorFashion/public_html/js/jquery.js"></script>

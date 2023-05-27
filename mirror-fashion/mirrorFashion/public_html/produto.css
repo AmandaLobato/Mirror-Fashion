@@ -11,6 +11,20 @@
 
 }
 
+.container ul li{
+    list-style: none;
+}
+
+button a{
+    text-decoration: none;
+    color: #333;
+}
+
+button a:hover{
+    text-decoration: none;
+    color: #4b4a4a;
+}
+
 label[for=verde]:after {
     background-color: #33CC66;
 }
